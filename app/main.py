@@ -4,6 +4,13 @@ from langchain_community.document_loaders import WebBaseLoader
 from chains import Chain
 from portfolio import Portfolio
 from utils import clean_text
+import sys
+
+try:
+    import pysqlite3
+    sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+except ImportError:
+    print("pysqlite3 not found, falling back to system sqlite3")
 
 
 def create_streamlit_app(llm, portfolio, clean_text):
