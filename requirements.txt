@@ -9,3 +9,4 @@ requests
 tiktoken
 pyyaml
 langchain_groq
+pysqlite3-binary
