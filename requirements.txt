@@ -1,12 +1,18 @@
+# Core Libraries
 streamlit
-langchain==0.1.12
+pandas
+chromadb
+uuid
+re
+dotenv
+
+# LangChain Components
+langchain
 langchain_community
-chromadb==0.4.24
-openai==1.2.3
-pandas==2.0.3
-setuptools>=58.0.0
-wheel
-numpy>=1.25.0
-requests
+langchain_core
+langchain_groq
+
+# Other Dependencies
 tiktoken
+openai
 pyyaml
