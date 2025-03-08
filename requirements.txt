@@ -1,18 +1,11 @@
-# Core Libraries
 streamlit
-pandas
-chromadb
-uuid
-re
-dotenv
-
-# LangChain Components
-langchain
+langchain==0.1.12
 langchain_community
-langchain_core
-langchain_groq
-
-# Other Dependencies
+chromadb==0.4.24
+openai==1.2.3
+pandas==2.0.3
+numpy>=1.26.0
+requests
 tiktoken
-openai
 pyyaml
+langchain_groq
